@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,10 +14,11 @@
 
 <body>
     <div id="colors">
-        <input type="radio" style="color: red;" name="red">
-        <input type="radio" style="color: blue;" name="red">
-        <input type="radio" style="color: yellow;" name="red">
-        <input type="radio" style="color: green;" name="red">
+        <button class="red" id="red"></button>
+        <button class="green" id="green"></button>
+        <button class="blue" id="blue"></button>
+        <button class="yellow" id="yellow"></button>
+        <button class="black" id="black"></button>
     </div>
     <div id="header">
         <h1 id="name">Manav Adwani</h1>
@@ -27,10 +30,10 @@
         </div>
 
         <div class="links">
-            <button><i class="fa fa-instagram"></i> Instagram</button>
-            <button><i class="fa fa-dribbble"></i> Dribbble</button>
-            <button><i class="fa fa-github"></i> GitHub</button>
-            <button><i class="fa fa-linkedin"></i> Linkedin</button>
+            <button id="btn"><i class="fa fa-instagram"></i> Instagram</button>
+            <button id="btn"><i class="fa fa-dribbble"></i> Dribbble</button>
+            <button id="btn"><i class="fa fa-github"></i> GitHub</button>
+            <button id="btn"><i class="fa fa-linkedin"></i> Linkedin</button>
         </div>
     </div>
     <br>
@@ -41,126 +44,139 @@
     <br>
     <br>
     <div class="budy">
-    <div id="left">
-        <div id="contact">
-            <h4 class="contact-primary">Contact</h4>
-            <p class="site"><i class="fa fa-link"></i> www.google.com</p>
-            <hr class="after-skills">
-            <p class="site"><i class="fa fa-envelope"></i> manav-adwani@gmail.com</p>
-            <hr class="after-skills">
-            <p class="site"><i class="fa fa-phone"></i> +91 9512278326</p>
-            <hr class="after-skills">
+        <div id="left">
+            <div id="contact">
+                <h4 id="heading" class="contact-primary">Contact</h4>
+                <p class="site"><i class="fa fa-link"></i> www.google.com</p>
+                <hr class="after-skills">
+                <p class="site"><i class="fa fa-envelope"></i> manav-adwani@gmail.com</p>
+                <hr class="after-skills">
+                <p class="site"><i class="fa fa-phone"></i> +91 9512278326</p>
+                <hr class="after-skills">
+            </div>
+            <div id="skills">
+                <h4 class="skills-primary" id="heading">Skills</h4>
+                <h4 class="skills-secondary">Title</h4>
+                <p class="skill"><i class="fa fa-code"></i>Front-end Development</p>
+                <hr class="after-skills">
+                <h4 class="skills-secondary">Technical</h4>
+                <p class="skill"><i class="fa fa-code"></i> HTML, CSS, JS, PHP, MYSQL, PYTHON</p>
+                <hr class="after-skills">
+                <h4 class="skills-secondary">Language</h4>
+                <p class="skill"><i class="fa fa-language"></i> HINDI, ENGLISH, SINDHI, GUJARATI</p>
+                <hr class="after-skills">
+            </div>
+            <div id="Education">
+                <h4 class="Education-primary" id="heading">Education</h4>
+                <h4 class="clg-name">Gls University</h4>
+                <p class="course"><i class="fa fa-book"></i>BSC-IT</p>
+                <p class="date"><i class="fa fa-calendar"></i>2020-2023</p>
+                <p class="place"><i class="fa fa-location-arrow"></i>Ahmedabad, India</p>
+                <hr class="after-edu">
+                <h4 class="clg-name">Shree Narayana</h4>
+                <p class="course"><i class="fa fa-book"></i>HSC</p>
+                <p class="date"><i class="fa fa-calendar"></i>2019-2020</p>
+                <p class="place"><i class="fa fa-location-arrow"></i>Ahmedabad, India</p>
+                <hr class="after-edu">
+            </div>
         </div>
-        <div id="skills">
-            <h4 class="skills-primary">Skills</h4>
-            <h4 class="skills-secondary">Title</h4>
-            <p class="skill"><i class="fa fa-code"></i>Front-end Development</p>
-            <hr class="after-skills">
-            <h4 class="skills-secondary">Technical</h4>
-            <p class="skill"><i class="fa fa-code"></i> HTML, CSS, JS, PHP, MYSQL, PYTHON</p>
-            <hr class="after-skills">
-            <h4 class="skills-secondary">Language</h4>
-            <p class="skill"><i class="fa fa-language"></i> HINDI, ENGLISH, SINDHI, GUJARATI</p>
-            <hr class="after-skills">
-        </div>
-        <div id="Education">
-            <h4 class="Education-primary">Education</h4>
-            <h4 class="clg-name">Gls University</h4>
-            <p class="course"><i class="fa fa-book"></i>BSC-IT</p>
-            <p class="date"><i class="fa fa-calendar"></i>2020-2023</p>
-            <p class="place"><i class="fa fa-location-arrow"></i>Ahmedabad, India</p>
-            <hr class="after-edu">
-            <h4 class="clg-name">Shree Narayana</h4>
-            <p class="course"><i class="fa fa-book"></i>HSC</p>
-            <p class="date"><i class="fa fa-calendar"></i>2019-2020</p>
-            <p class="place"><i class="fa fa-location-arrow"></i>Ahmedabad, India</p>
-            <hr class="after-edu">
-        </div>
-    </div>
 
-    <div id="right">
-        <div id="experience">
-            <h4 class="Experience-primary">Experience</h4>
-            <p class="cmp-name"><b>Company 1</b> - Front-End Developer</p>
-            <div class="location">
-                <p>Ahmedabad, India </p>
-                <p>||</p>
-                <p>2019-current</p>
-            </div>
-            <div class="desc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus maximus libero, eget
-                    blandit ipsum. Aenean accumsan dui dolor, ut vulputate justo ornare sit amet. Mauris consectetur
-                    gravida eros, in pharetra dui. Aenean hendrerit eros quis lectus bibendum, non ultrices quam
-                    ultricies.</p>
-            </div>
-            <br>
-            <hr>
-            <p class="cmp-name"><b>Company 2</b> - Front-End Developer</p>
-            <div class="location">
-                <p>Ahmedabad, India </p>
-                <p>||</p>
-                <p>2019-current</p>
-            </div>
-            <div class="desc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus maximus libero, eget
-                    blandit ipsum. Aenean accumsan dui dolor, ut vulputate justo ornare sit amet. Mauris consectetur
-                    gravida eros, in pharetra dui. Aenean hendrerit eros quis lectus bibendum, non ultrices quam
-                    ultricies.</p>
-            </div>
-            <br>
-            <hr>
-            <p class="cmp-name"><b>Company 3</b> - Front-End Developer</p>
-            <div class="location">
-                <p>Ahmedabad, India </p>
-                <p>||</p>
-                <p>2019-current</p>
-            </div>
-            <div class="desc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus maximus libero, eget
-                    blandit ipsum. Aenean accumsan dui dolor, ut vulputate justo ornare sit amet. Mauris consectetur
-                    gravida eros, in pharetra dui. Aenean hendrerit eros quis lectus bibendum, non ultrices quam
-                    ultricies.</p>
-            </div>
-            <br>
-            <hr>
-            
-        </div>
-        <br>
-        <!-- <br> -->
-        <div id="project">
-            <h4 class="Experience-primary">Project</h4>
-            <p class="cmp-name"><b>Project 1</b> - College Folks</p>
-            <div class="location">
-                <p>Ahmedabad, India </p>
-                <p>||</p>
-                <p>2019-current</p>
-            </div>
-            <div class="desc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus maximus libero, eget
-                    blandit ipsum. Aenean accumsan dui dolor, ut vulputate justo ornare sit amet. Mauris consectetur
-                    gravida eros, in pharetra dui. Aenean hendrerit eros quis lectus bibendum, non ultrices quam
-                    ultricies.</p>
+        <div id="right">
+            <div id="experience">
+                <h4 class="Experience-primary" id="heading">Experience</h4>
+                <p class="cmp-name"><b>Company 1</b> - Front-End Developer</p>
+                <div class="location">
+                    <p>Ahmedabad, India </p>
+                    <p>||</p>
+                    <p>2019-current</p>
+                </div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus maximus libero,
+                        eget
+                        blandit ipsum. Aenean accumsan dui dolor, ut vulputate justo ornare sit amet. Mauris
+                        consectetur
+                        gravida eros, in pharetra dui. Aenean hendrerit eros quis lectus bibendum, non ultrices quam
+                        ultricies.</p>
+                </div>
+                <br>
+                <hr>
+                <p class="cmp-name"><b>Company 2</b> - Front-End Developer</p>
+                <div class="location">
+                    <p>Ahmedabad, India </p>
+                    <p>||</p>
+                    <p>2019-current</p>
+                </div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus maximus libero,
+                        eget
+                        blandit ipsum. Aenean accumsan dui dolor, ut vulputate justo ornare sit amet. Mauris
+                        consectetur
+                        gravida eros, in pharetra dui. Aenean hendrerit eros quis lectus bibendum, non ultrices quam
+                        ultricies.</p>
+                </div>
+                <br>
+                <hr>
+                <p class="cmp-name"><b>Company 3</b> - Front-End Developer</p>
+                <div class="location">
+                    <p>Ahmedabad, India </p>
+                    <p>||</p>
+                    <p>2019-current</p>
+                </div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus maximus libero,
+                        eget
+                        blandit ipsum. Aenean accumsan dui dolor, ut vulputate justo ornare sit amet. Mauris
+                        consectetur
+                        gravida eros, in pharetra dui. Aenean hendrerit eros quis lectus bibendum, non ultrices quam
+                        ultricies.</p>
+                </div>
+                <br>
+                <hr>
+
             </div>
             <br>
-            <hr>
-            <p class="cmp-name"><b>Project 1</b> - College Folks</p>
-            <div class="location">
-                <p>Ahmedabad, India </p>
-                <p>||</p>
-                <p>2019-current</p>
+            <!-- <br> -->
+            <div id="project">
+                <h4 class="Experience-primary" id="heading">Project</h4>
+                <p class="cmp-name"><b>Project 1</b> - College Folks</p>
+                <div class="location">
+                    <p>Ahmedabad, India </p>
+                    <p>||</p>
+                    <p>2019-current</p>
+                </div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus maximus libero,
+                        eget
+                        blandit ipsum. Aenean accumsan dui dolor, ut vulputate justo ornare sit amet. Mauris
+                        consectetur
+                        gravida eros, in pharetra dui. Aenean hendrerit eros quis lectus bibendum, non ultrices quam
+                        ultricies.</p>
+                </div>
+                <br>
+                <hr>
+                <p class="cmp-name"><b>Project 1</b> - College Folks</p>
+                <div class="location">
+                    <p>Ahmedabad, India </p>
+                    <p>||</p>
+                    <p>2019-current</p>
+                </div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus maximus libero,
+                        eget
+                        blandit ipsum. Aenean accumsan dui dolor, ut vulputate justo ornare sit amet. Mauris
+                        consectetur
+                        gravida eros, in pharetra dui. Aenean hendrerit eros quis lectus bibendum, non ultrices quam
+                        ultricies.</p>
+                </div>
+                <br>
+                <hr>
             </div>
-            <div class="desc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus maximus libero, eget
-                    blandit ipsum. Aenean accumsan dui dolor, ut vulputate justo ornare sit amet. Mauris consectetur
-                    gravida eros, in pharetra dui. Aenean hendrerit eros quis lectus bibendum, non ultrices quam
-                    ultricies.</p>
-            </div>
-            <br>
-            <hr>
         </div>
     </div>
-</div>
     <script src="cv.js"></script>
+    <script>
+        alert("Press Ctrl + p to download/print. \nNote : Use A3 Page only");
+    </script>
 </body>
 
 </html>

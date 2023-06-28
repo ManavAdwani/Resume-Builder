@@ -1,0 +1,66 @@
+<div id="experience">
+            <h4 class="Experience-primary">Experience</h4>
+            <p class="cmp-name"><b>Company 1</b> - Front-End Developer</p>
+            <div class="location">
+                <p>Ahmedabad, India </p>
+                <p>||</p>
+                <p>2019-current</p>
+            </div>
+            <div class="desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus maximus libero, eget
+                    blandit ipsum. Aenean accumsan dui dolor, ut vulputate justo ornare sit amet. Mauris consectetur
+                    gravida eros, in pharetra dui. Aenean hendrerit eros quis lectus bibendum, non ultrices quam
+                    ultricies.</p>
+            </div>
+            <p class="cmp-name"><b>Company 2</b> - Front-End Developer</p>
+            <div class="location">
+                <p>Ahmedabad, India </p>
+                <p>||</p>
+                <p>2019-current</p>
+            </div>
+            <div class="desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus maximus libero, eget
+                    blandit ipsum. Aenean accumsan dui dolor, ut vulputate justo ornare sit amet. Mauris consectetur
+                    gravida eros, in pharetra dui. Aenean hendrerit eros quis lectus bibendum, non ultrices quam
+                    ultricies.</p>
+            </div>
+            <p class="cmp-name"><b>Company 3</b> - Front-End Developer</p>
+            <div class="location">
+                <p>Ahmedabad, India </p>
+                <p>||</p>
+                <p>2019-current</p>
+            </div>
+            <div class="desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus maximus libero, eget
+                    blandit ipsum. Aenean accumsan dui dolor, ut vulputate justo ornare sit amet. Mauris consectetur
+                    gravida eros, in pharetra dui. Aenean hendrerit eros quis lectus bibendum, non ultrices quam
+                    ultricies.</p>
+            </div>
+        </div>
+
+        <div id="project">
+            <h4 class="project-primary">Project</h4>
+            <p class="project-name"><b>Project 1</b> - Front-End Developer</p>
+            <div class="location">
+                <p>Ahmedabad, India </p>
+                <p>||</p>
+                <p>2019-current</p>
+            </div>
+            <div class="desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus maximus libero, eget
+                    blandit ipsum. Aenean accumsan dui dolor, ut vulputate justo ornare sit amet. Mauris consectetur
+                    gravida eros, in pharetra dui. Aenean hendrerit eros quis lectus bibendum, non ultrices quam
+                    ultricies.</p>
+            </div>
+            <p class="project-name"><b>Project 2</b> - Front-End Developer</p>
+            <div class="location">
+                <p>Ahmedabad, India </p>
+                <p>||</p>
+                <p>2019-current</p>
+            </div>
+            <div class="desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus maximus libero, eget
+                    blandit ipsum. Aenean accumsan dui dolor, ut vulputate justo ornare sit amet. Mauris consectetur
+                    gravida eros, in pharetra dui. Aenean hendrerit eros quis lectus bibendum, non ultrices quam
+                    ultricies.</p>
+        </div>
