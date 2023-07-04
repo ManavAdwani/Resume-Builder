@@ -315,7 +315,7 @@ label {
   box-sizing: border-box;
   width: 80%;
   margin: 0 10%;
-
+  
   /*stacking fieldsets above each other*/
   position: relative;
 }
@@ -335,6 +335,37 @@ label {
   font-family: montserrat;
   color: #2c3e50;
   font-size: 13px;
+  resize: none;
+}
+
+#msform fieldset #story{
+  display: flex;
+  /* position:absolute; */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  /* width: 1000px; */
+}
+
+
+fieldset #storybtn{
+  /* display: flex; */
+  cursor: pointer;
+  background-color: black;
+  border: none;
+  color: white;
+  width: 150px;
+  height: 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  display: none;
+  margin-bottom: 10px;
+  float: right;
+  position:relative;
+  /* margin-left: 930px; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* width: 1000px; */
 }
 /*buttons*/
 #msform .action-button {
@@ -453,4 +484,143 @@ label {
 
 .hrefa a{
   color: red;
+}
+
+.chatbox{
+  position: relative;
+  z-index: 1;
+  margin-top: -30%;
+  display: none;
+  background-color: gainsboro;
+  height: 400px;
+  width: 350px;
+  float: right;
+  margin-right: 100px;
+  /* border-top: 10px solid pink; */
+  /* border: 1px solid black; */
+  border-radius: 15px;
+  overflow: scroll;
+}
+
+.chatbox .header p{
+  font-weight: 600;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.chatbox .header{
+  background-color: black;
+}
+
+.chatbox .body{
+  display: block;
+}
+
+.gpt{
+  float: left;
+  margin: 10px;
+  margin-left: 2px;
+  background-color: black;
+  color: white;
+  width: 120px;
+  text-align: center;
+  height: 30px;
+  border-radius:10px 0 0 0;
+}
+
+.write-here{
+  margin-top: 280px;
+  width: 120px;
+  height: 20px;
+}
+
+.button-bar {
+  margin-top: 280px;
+  padding: 2rem;
+  /* background: gray; */
+  position: sticky;
+  bottom: 0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+.button-bar button{
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.button-bar button:hover{
+  background-color: white;
+  color: black;
+}
+
+/* Floating BUtton */
+.floating{
+  display: none;
+}
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:120px;
+  /* top: 500px; */
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
+.float{
+	position:fixed;
+	width:70px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#06C;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size: 23px;
+  font-weight: 600;
+	box-shadow: 2px 2px 3px #999;
+  /* visibility: hidden; */
+}
+
+.my-float{
+	/* font-size:100px; */
+	margin-top:18px;
+}
+
+a.float + div.label-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease;
+}
+
+a.float:hover + div.label-container{
+  visibility: visible;
+  opacity: 1;
 }

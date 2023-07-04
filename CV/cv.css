@@ -140,6 +140,24 @@
   color: #998e93;
 }
 
+.profile-primary{
+  /* margin-top: 40px; */
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin-left: 200px;
+  font-size: 26px;
+  color: #fe3b31;
+}
+
+.descp{
+  margin-top: 15px;
+  width: 250px;
+  /* margin-left: 20px; */
+  padding-left: 200px;
+  margin-bottom: 30px;
+}
+
 .skill {
   margin-left: 200px;
   margin-top: 10px;

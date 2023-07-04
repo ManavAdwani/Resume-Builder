@@ -1,5 +1,5 @@
 <?php
-$strdd= "Write an profile for me from my perspective. My name is Manav Adwani and I am an Website developer";
+$strdd= "Name : Manav Adwani, Job Title : Full stack Website Developer, Experience : Fresher. Please write some lines on This.";
 $ch = curl_init();
 
 $data = array(
@@ -14,7 +14,7 @@ $data = array(
 
 $headers = array(
     'Content-Type: application/json',
-    'Authorization: Bearer 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'
+    'Authorization: Bearer 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'
 );
 
 curl_setopt($ch, CURLOPT_URL, 'https://api.openai.com/v1/completions');

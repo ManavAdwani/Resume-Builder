@@ -27,8 +27,9 @@ if (isset($_POST['next'])) {
     $clg_location = $_POST['clg_location'];
     $clg_year = $_POST['clg_year'];
     $clg_course = $_POST['clg_course'];
+    $lang = $_POST['languages'];
 
-    $sql = "INSERT INTO `education`(`Name`,`SSC_Name`, `SSC_Location`, `SSC_Year`, `HSC_Name`, `HSC_Location`, `HSC_Year`, `HSC_Stream`, `Clg_Name`, `Clg_Location`, `Clg_Year`, `Clg_Stream`) VALUES ('{$fname}','{$ssc_name}', '{$ssc_location}' ,'{$ssc_year}','{$hsc_name}','{$hsc_location}','{$hsc_year}','{$hsc_stream}','{$clg_name}', '{$clg_location}','{$clg_year}','{$clg_course}')";
+    $sql = "INSERT INTO `education`(`Name`,`SSC_Name`, `SSC_Location`, `SSC_Year`, `HSC_Name`, `HSC_Location`, `HSC_Year`, `HSC_Stream`, `Clg_Name`, `Clg_Location`, `Clg_Year`, `Clg_Stream`, `Language`) VALUES ('{$fname}','{$ssc_name}', '{$ssc_location}' ,'{$ssc_year}','{$hsc_name}','{$hsc_location}','{$hsc_year}','{$hsc_stream}','{$clg_name}', '{$clg_location}','{$clg_year}','{$clg_course}', '{$lang}')";
 
     $q1 = mysqli_query($conn, $sql);
     if ($q1) {

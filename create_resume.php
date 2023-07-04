@@ -21,11 +21,11 @@ if (isset($_POST['next'])) {
     $pin = $_POST['pincode'];
     $email = $_POST['email'];
     $number = $_POST['number'];
-    // $pin = $_POST['pincode'];
+    $story = $_POST['story'];
     $insta = $_POST['insta'];
     $linkedin = $_POST['linkedin'];
     $github = $_POST['github'];
-    $story = $_POST['story'];
+    // $story = $_POST['story'];
 
     $_SESSION['Fname'] = $name;
 
@@ -50,6 +50,7 @@ if (isset($_POST['next'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Builder - Create Resume in seconds</title>
     <link rel="stylesheet" href="create_resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -107,6 +108,9 @@ if (isset($_POST['next'])) {
                 <input type="email" name="email" placeholder="Email" required />
                 <input type="number" name="number" placeholder="Phone Number" required />
                 <textarea id="story" name="story" rows="5" cols="33" placeholder="Describe Yourself in 250 words : "></textarea>
+
+                <!-- <br> -->
+                <!-- <button id="storybtn">Write with Chat-GPT</button> -->
                 <input type="text" name="insta" placeholder="Instagram Link" />
                 <input type="text" name="linkedin" placeholder="linkedin Link" />
                 <input type="text" name="github" placeholder="Github Link" />
@@ -121,9 +125,33 @@ if (isset($_POST['next'])) {
             </fieldset>
             <!-- Personal Information PHP -->
         </form>
+        <div class="floating" id="storybtn">
+        <a href="#" class="float">
+        <i class="fa fa-robot my-float"></i>
+    </a>
+    <div class="label-container">
+        <div class="label-text">Write Description with Chat-GPT</div>
+        <i class="fa fa-play label-arrow"></i>
+    </div>
+    </div>
         <br>
         <br>
+        <div id="gpt" class="chatbox">
+            <div class="header">
+                <p>Chat-GPT</p>
+            </div>
+            <div class="body">
+                <div class="gpt">
+                    <p>chat GPT</p>
+                </div>
+                <br>
+
+            </div>
+            <div class="button-bar">
+                <button>Regenerate <i class="fa fa-refresh"></i></button>
+            </div>
+        </div>
 </body>
-<!-- <script src="create_resume.js"></script> -->
+<script src="create_resume.js"></script>
 
 </html>
